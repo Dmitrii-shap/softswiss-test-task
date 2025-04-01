@@ -24,17 +24,17 @@ jobs:
       matrix:
         node-version: [ 22.x ]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Starting Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install packages
         run: npm install
-      - name: Build example
+      - name: Build
         run: npm run build
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
@@ -53,4 +53,4 @@ jobs:
     steps:
       - name: Deploy project
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
