@@ -1,0 +1,40 @@
+.see-more {
+    &__wrap {
+        padding-top: 62px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    &__header{
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: var(--font-weight-extra-bold);
+
+        color: var(--color-white);
+    }
+
+    &__text {
+        font-weight: var(--font-weight-bold);
+        font-size: 20px;
+        line-height: 24px;
+
+        color: var(--color-white);
+
+        opacity: 0.6;
+
+        &--more {
+            margin-top: 17px;
+            overflow: hidden;
+            transition: ease-in-out;
+            padding: 0;
+        }
+    }
+
+    &__details {
+       summary::marker {
+            display: none;
+        }
+    }
+}
