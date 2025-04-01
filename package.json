@@ -27,5 +27,10 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dmitrii-shap.github.io/softswiss-test-task"
+  },
+  "homepage": "https://dmitrii-shap.github.io/softswiss-test-task"
 }
